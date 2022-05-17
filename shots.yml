@@ -1,6 +1,7 @@
-- url: https://global-power-plants.datasettes.com/global-power-plants/global-power-plants
+- url: https://global-power-plants.datasettes.com/global-power-plants/global-power-plants?_facet_size=5&country_long=United+States+of+America
   output: global-power-plants.png
   height: 1600
+  wait: 2000
 - url: https://latest.datasette.io/fixtures/facetable
   output: facetable.png
   height: 800
