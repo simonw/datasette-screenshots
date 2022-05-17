@@ -52,7 +52,7 @@ jobs:
           }
     - name: Take shots
       run: |
-        shot-scraper multi shots.yml
+        shot-scraper multi shots.yml --retina
     - name: Commit and push
       run: |-
         git config user.name "Automated"
