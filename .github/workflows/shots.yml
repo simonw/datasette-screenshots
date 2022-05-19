@@ -37,7 +37,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
-        cargo install oxipng
+        which oxipng || cargo install oxipng
         shot-scraper install
     - uses: actions/github-script@v6
       name: Create shots.yml if missing on first run
