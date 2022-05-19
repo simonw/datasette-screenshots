@@ -17,7 +17,7 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: "3.10"
-    - uses: actions/cache@v2
+    - uses: actions/cache@v3
       name: Configure pip caching
       with:
         path: ~/.cache/pip
@@ -25,15 +25,19 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-
     - name: Cache Playwright browsers
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: ~/.cache/ms-playwright/
         key: ${{ runner.os }}-browsers
+    - name: Cache OxiPNG
+      uses: actions/cache@v3
+      with:
+        path: ~/.cargo/
+        key: ${{ runner.os }}-cargo
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
-    - name: Install Playwright dependencies
-      run: |
+        cargo install oxipng
         shot-scraper install
     - uses: actions/github-script@v6
       name: Create shots.yml if missing on first run
@@ -53,7 +57,11 @@ jobs:
     - name: Take shots
       run: |
         shot-scraper multi shots.yml --retina
+    - name: Optimize PNGs
+      run: |-
+        oxipng -o 4 -i 0 --strip safe *.png
     - name: Commit and push
+      if: github.ref == 'refs/heads/main'
       run: |-
         git config user.name "Automated"
         git config user.email "actions@users.noreply.github.com"
