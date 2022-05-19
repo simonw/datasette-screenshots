@@ -60,13 +60,8 @@ jobs:
     - name: Optimize PNGs
       run: |-
         oxipng -o 4 -i 0 --strip safe *.png
-    - name: Artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: screenshots
-        path: "*.png"
     - name: Commit and push
-      if: false
+      if: github.ref == 'refs/heads/main'
       run: |-
         git config user.name "Automated"
         git config user.email "actions@users.noreply.github.com"
