@@ -1,7 +1,7 @@
 - url: https://global-power-plants.datasettes.com/global-power-plants/global-power-plants?_facet_size=5&country_long=United+States+of+America
   output: global-power-plants.png
   height: 1600
-  wait: 2000
+  wait: 5000
 - url: https://congress-legislators.datasettes.com/legislators/executive_terms?_facet=type&_facet=party
   output: faceting.png
   height: 800
