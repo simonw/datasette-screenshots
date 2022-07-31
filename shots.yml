@@ -12,3 +12,8 @@
   height: 1200
   wait: 1500
   output: tutorials-clean-data-locations-map.png
+- url: https://manatees.vercel.app/manatees/locations?_nocol=latitude&_nocol=longitude&_facet=DCODE&_facet=MORTALITY
+  selectors:
+  - .facet-results
+  - header
+  output: tutorials-clean-data-facets.png
