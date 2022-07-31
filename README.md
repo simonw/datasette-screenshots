@@ -22,8 +22,9 @@ for shot in shots:
 ]]] -->
 ## global-power-plants.png
 
-- Retina: [global-power-plants.png](global-power-plants.png) - 770 KB
+- Retina: [global-power-plants.png](global-power-plants.png) - 771 KB
 - Non-retina: [non-retina/global-power-plants.png](non-retina/global-power-plants.png) - 238 KB
+
 ```yaml
 - height: 1600
   output: global-power-plants.png
@@ -35,6 +36,7 @@ for shot in shots:
 
 - Retina: [faceting.png](faceting.png) - 210 KB
 - Non-retina: [non-retina/faceting.png](non-retina/faceting.png) - 90 KB
+
 ```yaml
 - height: 800
   output: faceting.png
@@ -45,6 +47,7 @@ for shot in shots:
 
 - Retina: [sql-query.png](sql-query.png) - 169 KB
 - Non-retina: [non-retina/sql-query.png](non-retina/sql-query.png) - 73 KB
+
 ```yaml
 - height: 800
   output: sql-query.png
@@ -55,6 +58,7 @@ for shot in shots:
 
 - Retina: [tutorials-clean-data-locations-map.png](tutorials-clean-data-locations-map.png) - 665 KB
 - Non-retina: [non-retina/tutorials-clean-data-locations-map.png](non-retina/tutorials-clean-data-locations-map.png) - 253 KB
+
 ```yaml
 - height: 1200
   output: tutorials-clean-data-locations-map.png
@@ -66,6 +70,7 @@ for shot in shots:
 
 - Retina: [tutorials-clean-data-facets.png](tutorials-clean-data-facets.png) - 160 KB
 - Non-retina: [non-retina/tutorials-clean-data-facets.png](non-retina/tutorials-clean-data-facets.png) - 70 KB
+
 ```yaml
 - output: tutorials-clean-data-facets.png
   selectors:
