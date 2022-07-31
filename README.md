@@ -20,7 +20,58 @@ for shot in shots:
     ))
     cog.out("```yaml\n{}```\n\n".format(yaml.dump([shot])))
 ]]] -->
-...
+## global-power-plants.png
+
+- Retina: [global-power-plants.png](global-power-plants.png) - 770 KB
+- Non-retina: [non-retina/global-power-plants.png](non-retina/global-power-plants.png) - 238 KB
+```yaml
+- height: 1600
+  output: global-power-plants.png
+  url: https://global-power-plants.datasettes.com/global-power-plants/global-power-plants?_facet_size=5&country_long=United+States+of+America
+  wait: 5000
+```
+
+## faceting.png
+
+- Retina: [faceting.png](faceting.png) - 210 KB
+- Non-retina: [non-retina/faceting.png](non-retina/faceting.png) - 90 KB
+```yaml
+- height: 800
+  output: faceting.png
+  url: https://congress-legislators.datasettes.com/legislators/executive_terms?_facet=type&_facet=party
+```
+
+## sql-query.png
+
+- Retina: [sql-query.png](sql-query.png) - 169 KB
+- Non-retina: [non-retina/sql-query.png](non-retina/sql-query.png) - 73 KB
+```yaml
+- height: 800
+  output: sql-query.png
+  url: https://latest.datasette.io/fixtures?sql=%0Aselect+_neighborhood%2C+facet_cities.name%2C+state%0Afrom+facetable%0A++++join+facet_cities%0A++++++++on+facetable._city_id+%3D+facet_cities.id%0Awhere+_neighborhood+like+%27%25%27+%7C%7C+%3Atext+%7C%7C+%27%25%27%0Aorder+by+_neighborhood%3B%0A&text=town
+```
+
+## tutorials-clean-data-locations-map.png
+
+- Retina: [tutorials-clean-data-locations-map.png](tutorials-clean-data-locations-map.png) - 665 KB
+- Non-retina: [non-retina/tutorials-clean-data-locations-map.png](non-retina/tutorials-clean-data-locations-map.png) - 253 KB
+```yaml
+- height: 1200
+  output: tutorials-clean-data-locations-map.png
+  url: https://manatees.vercel.app/manatees/locations
+  wait: 1500
+```
+
+## tutorials-clean-data-facets.png
+
+- Retina: [tutorials-clean-data-facets.png](tutorials-clean-data-facets.png) - 160 KB
+- Non-retina: [non-retina/tutorials-clean-data-facets.png](non-retina/tutorials-clean-data-facets.png) - 70 KB
+```yaml
+- output: tutorials-clean-data-facets.png
+  selectors:
+  - .facet-results
+  - header
+  url: https://manatees.vercel.app/manatees/locations?_nocol=latitude&_nocol=longitude&_facet=DCODE&_facet=MORTALITY
 ```
 
 <!-- [[[end]]] -->
