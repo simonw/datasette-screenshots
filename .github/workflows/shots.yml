@@ -67,6 +67,9 @@ jobs:
       run: |-
         oxipng -o 4 -i 0 --strip safe *.png
         oxipng -o 4 -i 0 --strip safe non-retina/*.png
+    - name: Update README
+      run: |
+        cog -r README.md
     - name: Commit and push
       if: github.ref == 'refs/heads/main'
       run: |-
