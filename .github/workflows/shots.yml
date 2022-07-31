@@ -54,12 +54,19 @@ jobs:
               }
               fs.writeFileSync('shots.yml', line + '\n');
           }
-    - name: Take shots
+    - name: Take retina shots
       run: |
         shot-scraper multi shots.yml --retina
+    - name: Take non-retina shots
+      run: |
+        mkdir -p non-retina
+        cd non-retina
+        shot-scraper multi shots.yml
+        cd ..
     - name: Optimize PNGs
       run: |-
         oxipng -o 4 -i 0 --strip safe *.png
+        oxipng -o 4 -i 0 --strip safe non-retina/*.png
     - name: Commit and push
       if: github.ref == 'refs/heads/main'
       run: |-
