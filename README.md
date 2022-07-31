@@ -19,6 +19,9 @@ for shot in shots:
         ).stat().st_size // 1024,
     ))
     cog.out("\n```yaml\n{}```\n\n".format(yaml.dump([shot])))
+    cog.out('<img alt="{output}" src="non-retina/{output}" width="400">\n\n'.format(
+        output=shot["output"]
+    ))
 ]]] -->
 ## global-power-plants.png
 
