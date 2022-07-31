@@ -61,7 +61,7 @@ jobs:
       run: |
         mkdir -p non-retina
         cd non-retina
-        shot-scraper multi shots.yml
+        shot-scraper multi ../shots.yml
         cd ..
     - name: Optimize PNGs
       run: |-
