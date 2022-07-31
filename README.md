@@ -18,7 +18,7 @@ for shot in shots:
             Path("non-retina") / shot["output"]
         ).stat().st_size // 1024,
     ))
-    cog.out("```yaml\n{}```\n\n".format(yaml.dump([shot])))
+    cog.out("\n```yaml\n{}```\n\n".format(yaml.dump([shot])))
 ]]] -->
 ## global-power-plants.png
 
