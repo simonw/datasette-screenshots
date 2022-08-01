@@ -1,6 +1,6 @@
 # datasette-screenshots
 
-Screenshots of Datasette, taken using [shot-scraper](https://github.com/simonw/shot-scraper).
+Screenshots of Datasette, taken using [shot-scraper](https://github.com/simonw/shot-scraper) running in GitHub Actions in [this repository](https://github.com/simonw/datasette-screenshots).
 
 <!-- [[[cog
 import cog, yaml
