@@ -25,8 +25,8 @@ for shot in shots:
 ]]] -->
 ## global-power-plants.png
 
-- Retina: [global-power-plants.png](global-power-plants.png) - 770 KB
-- Non-retina: [non-retina/global-power-plants.png](non-retina/global-power-plants.png) - 238 KB
+- Retina: [global-power-plants.png](global-power-plants.png) - 750 KB
+- Non-retina: [non-retina/global-power-plants.png](non-retina/global-power-plants.png) - 234 KB
 
 ```yaml
 - height: 1600
@@ -65,8 +65,8 @@ for shot in shots:
 
 ## tutorials-clean-data-locations-map.png
 
-- Retina: [tutorials-clean-data-locations-map.png](tutorials-clean-data-locations-map.png) - 666 KB
-- Non-retina: [non-retina/tutorials-clean-data-locations-map.png](non-retina/tutorials-clean-data-locations-map.png) - 253 KB
+- Retina: [tutorials-clean-data-locations-map.png](tutorials-clean-data-locations-map.png) - 673 KB
+- Non-retina: [non-retina/tutorials-clean-data-locations-map.png](non-retina/tutorials-clean-data-locations-map.png) - 255 KB
 
 ```yaml
 - height: 1200
@@ -91,5 +91,19 @@ for shot in shots:
 ```
 
 <img alt="tutorials-clean-data-facets.png" src="non-retina/tutorials-clean-data-facets.png" width="400">
+
+## regmem-search.png
+
+- Retina: [regmem-search.png](regmem-search.png) - 137 KB
+- Non-retina: [non-retina/regmem-search.png](non-retina/regmem-search.png) - 61 KB
+
+```yaml
+- height: 585
+  output: regmem-search.png
+  url: https://register-of-members-interests.datasettes.com/regmem/items?_search=hamper&_sort_desc=date
+  width: 960
+```
+
+<img alt="regmem-search.png" src="non-retina/regmem-search.png" width="400">
 
 <!-- [[[end]]] -->
