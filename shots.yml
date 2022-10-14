@@ -21,3 +21,6 @@
   height: 585
   width: 960
   output: regmem-search.png
+- url: https://register-of-members-interests.datasettes.com/regmem/items?_search=hamper
+  selector: "#export"
+  output: advanced-export.png
