@@ -10,7 +10,7 @@ permissions:
 jobs:
   shot-scraper:
     runs-on: ubuntu-latest
-    if: ${{ github.repository != 'simonw/shot-scraper-template' }}
+    if: ${{ github.ref == 'refs/heads/main' }}
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.10
