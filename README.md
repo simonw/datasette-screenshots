@@ -25,8 +25,8 @@ for shot in shots:
 ]]] -->
 ## global-power-plants.png
 
-- Retina: [global-power-plants.png](global-power-plants.png) - 748 KB
-- Non-retina: [non-retina/global-power-plants.png](non-retina/global-power-plants.png) - 235 KB
+- Retina: [global-power-plants.png](global-power-plants.png) - 750 KB
+- Non-retina: [non-retina/global-power-plants.png](non-retina/global-power-plants.png) - 233 KB
 
 ```yaml
 - height: 1600
@@ -94,7 +94,7 @@ for shot in shots:
 
 ## regmem-search.png
 
-- Retina: [regmem-search.png](regmem-search.png) - 135 KB
+- Retina: [regmem-search.png](regmem-search.png) - 137 KB
 - Non-retina: [non-retina/regmem-search.png](non-retina/regmem-search.png) - 61 KB
 
 ```yaml
