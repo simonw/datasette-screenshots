@@ -26,7 +26,7 @@ for shot in shots:
 ## global-power-plants.png
 
 - Retina: [global-power-plants.png](global-power-plants.png) - 750 KB
-- Non-retina: [non-retina/global-power-plants.png](non-retina/global-power-plants.png) - 234 KB
+- Non-retina: [non-retina/global-power-plants.png](non-retina/global-power-plants.png) - 235 KB
 
 ```yaml
 - height: 1600
@@ -66,7 +66,7 @@ for shot in shots:
 ## tutorials-clean-data-locations-map.png
 
 - Retina: [tutorials-clean-data-locations-map.png](tutorials-clean-data-locations-map.png) - 673 KB
-- Non-retina: [non-retina/tutorials-clean-data-locations-map.png](non-retina/tutorials-clean-data-locations-map.png) - 255 KB
+- Non-retina: [non-retina/tutorials-clean-data-locations-map.png](non-retina/tutorials-clean-data-locations-map.png) - 254 KB
 
 ```yaml
 - height: 1200
@@ -118,5 +118,37 @@ for shot in shots:
 ```
 
 <img alt="advanced-export.png" src="non-retina/advanced-export.png" width="400">
+
+## faceting-details.png
+
+- Retina: [faceting-details.png](faceting-details.png) - 158 KB
+- Non-retina: [non-retina/faceting-details.png](non-retina/faceting-details.png) - 69 KB
+
+```yaml
+- output: faceting-details.png
+  padding: 10
+  selectors_all:
+  - .suggested-facets a
+  - tr:not(tr:nth-child(n+4)) td:not(:nth-child(n+11))
+  url: https://congress-legislators.datasettes.com/legislators/legislator_terms?_facet=type&_facet=party&_facet=state&_facet_size=10
+```
+
+<img alt="faceting-details.png" src="non-retina/faceting-details.png" width="400">
+
+## binary-data.png
+
+- Retina: [binary-data.png](binary-data.png) - 14 KB
+- Non-retina: [non-retina/binary-data.png](non-retina/binary-data.png) - 4 KB
+
+```yaml
+- javascript: "Array.from(\n  document.querySelectorAll('tr:nth-child(n+3)'),\n  el\
+    \ => el.parentNode.removeChild(el)\n);"
+  output: binary-data.png
+  padding: 10
+  selector: table
+  url: https://latest.datasette.io/fixtures/binary_data
+```
+
+<img alt="binary-data.png" src="non-retina/binary-data.png" width="400">
 
 <!-- [[[end]]] -->
