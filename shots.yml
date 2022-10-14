@@ -24,3 +24,9 @@
 - url: https://register-of-members-interests.datasettes.com/regmem/items?_search=hamper
   selector: "#export"
   output: advanced-export.png
+- url: https://congress-legislators.datasettes.com/legislators/legislator_terms?_facet=type&_facet=party&_facet=state&_facet_size=10
+  selectors_all:
+  - .suggested-facets a
+  - tr:not(tr:nth-child(n+4)) td:not(:nth-child(n+11))
+  padding: 10
+  output: faceting-details.png
