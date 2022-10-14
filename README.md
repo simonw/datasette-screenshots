@@ -106,4 +106,17 @@ for shot in shots:
 
 <img alt="regmem-search.png" src="non-retina/regmem-search.png" width="400">
 
+## advanced-export.png
+
+- Retina: [advanced-export.png](advanced-export.png) - 31 KB
+- Non-retina: [non-retina/advanced-export.png](non-retina/advanced-export.png) - 14 KB
+
+```yaml
+- output: advanced-export.png
+  selector: '#export'
+  url: https://register-of-members-interests.datasettes.com/regmem/items?_search=hamper
+```
+
+<img alt="advanced-export.png" src="non-retina/advanced-export.png" width="400">
+
 <!-- [[[end]]] -->
