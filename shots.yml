@@ -24,6 +24,7 @@
 - url: https://register-of-members-interests.datasettes.com/regmem/items?_search=hamper
   selector: "#export"
   output: advanced-export.png
+  padding: 10
 - url: https://congress-legislators.datasettes.com/legislators/legislator_terms?_facet=type&_facet=party&_facet=state&_facet_size=10
   selectors_all:
   - .suggested-facets a
