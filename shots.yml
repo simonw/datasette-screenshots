@@ -17,3 +17,7 @@
   - .facet-results
   - header
   output: tutorials-clean-data-facets.png
+- url: https://register-of-members-interests.datasettes.com/regmem/items?_search=hamper&_sort_desc=date
+  height: 585
+  width: 960
+  output: regmem-search.png
