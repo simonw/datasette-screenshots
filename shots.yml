@@ -30,3 +30,12 @@
   - tr:not(tr:nth-child(n+4)) td:not(:nth-child(n+11))
   padding: 10
   output: faceting-details.png
+- url: https://latest.datasette.io/fixtures/binary_data
+  selector: table
+  javascript: |-
+    Array.from(
+      document.querySelectorAll('tr:nth-child(n+3)'),
+      el => el.parentNode.removeChild(el)
+    );
+  padding: 10
+  output: binary-data.png
