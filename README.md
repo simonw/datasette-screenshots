@@ -25,7 +25,7 @@ for shot in shots:
 ]]] -->
 ## global-power-plants.png
 
-- Retina: [global-power-plants.png](global-power-plants.png) - 750 KB
+- Retina: [global-power-plants.png](global-power-plants.png) - 748 KB
 - Non-retina: [non-retina/global-power-plants.png](non-retina/global-power-plants.png) - 235 KB
 
 ```yaml
@@ -94,7 +94,7 @@ for shot in shots:
 
 ## regmem-search.png
 
-- Retina: [regmem-search.png](regmem-search.png) - 137 KB
+- Retina: [regmem-search.png](regmem-search.png) - 135 KB
 - Non-retina: [non-retina/regmem-search.png](non-retina/regmem-search.png) - 61 KB
 
 ```yaml
@@ -108,11 +108,12 @@ for shot in shots:
 
 ## advanced-export.png
 
-- Retina: [advanced-export.png](advanced-export.png) - 31 KB
+- Retina: [advanced-export.png](advanced-export.png) - 33 KB
 - Non-retina: [non-retina/advanced-export.png](non-retina/advanced-export.png) - 14 KB
 
 ```yaml
 - output: advanced-export.png
+  padding: 10
   selector: '#export'
   url: https://register-of-members-interests.datasettes.com/regmem/items?_search=hamper
 ```
