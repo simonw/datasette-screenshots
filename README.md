@@ -25,8 +25,8 @@ for shot in shots:
 ]]] -->
 ## global-power-plants.png
 
-- Retina: [global-power-plants.png](global-power-plants.png) - 750 KB
-- Non-retina: [non-retina/global-power-plants.png](non-retina/global-power-plants.png) - 233 KB
+- Retina: [global-power-plants.png](global-power-plants.png) - 665 KB
+- Non-retina: [non-retina/global-power-plants.png](non-retina/global-power-plants.png) - 204 KB
 
 ```yaml
 - height: 1600
@@ -39,8 +39,8 @@ for shot in shots:
 
 ## faceting.png
 
-- Retina: [faceting.png](faceting.png) - 210 KB
-- Non-retina: [non-retina/faceting.png](non-retina/faceting.png) - 90 KB
+- Retina: [faceting.png](faceting.png) - 188 KB
+- Non-retina: [non-retina/faceting.png](non-retina/faceting.png) - 79 KB
 
 ```yaml
 - height: 800
@@ -52,8 +52,8 @@ for shot in shots:
 
 ## sql-query.png
 
-- Retina: [sql-query.png](sql-query.png) - 169 KB
-- Non-retina: [non-retina/sql-query.png](non-retina/sql-query.png) - 73 KB
+- Retina: [sql-query.png](sql-query.png) - 150 KB
+- Non-retina: [non-retina/sql-query.png](non-retina/sql-query.png) - 65 KB
 
 ```yaml
 - height: 800
@@ -65,8 +65,8 @@ for shot in shots:
 
 ## tutorials-clean-data-locations-map.png
 
-- Retina: [tutorials-clean-data-locations-map.png](tutorials-clean-data-locations-map.png) - 673 KB
-- Non-retina: [non-retina/tutorials-clean-data-locations-map.png](non-retina/tutorials-clean-data-locations-map.png) - 254 KB
+- Retina: [tutorials-clean-data-locations-map.png](tutorials-clean-data-locations-map.png) - 605 KB
+- Non-retina: [non-retina/tutorials-clean-data-locations-map.png](non-retina/tutorials-clean-data-locations-map.png) - 224 KB
 
 ```yaml
 - height: 1200
@@ -79,8 +79,8 @@ for shot in shots:
 
 ## tutorials-clean-data-facets.png
 
-- Retina: [tutorials-clean-data-facets.png](tutorials-clean-data-facets.png) - 160 KB
-- Non-retina: [non-retina/tutorials-clean-data-facets.png](non-retina/tutorials-clean-data-facets.png) - 70 KB
+- Retina: [tutorials-clean-data-facets.png](tutorials-clean-data-facets.png) - 148 KB
+- Non-retina: [non-retina/tutorials-clean-data-facets.png](non-retina/tutorials-clean-data-facets.png) - 65 KB
 
 ```yaml
 - output: tutorials-clean-data-facets.png
@@ -94,8 +94,8 @@ for shot in shots:
 
 ## regmem-search.png
 
-- Retina: [regmem-search.png](regmem-search.png) - 137 KB
-- Non-retina: [non-retina/regmem-search.png](non-retina/regmem-search.png) - 61 KB
+- Retina: [regmem-search.png](regmem-search.png) - 5 KB
+- Non-retina: [non-retina/regmem-search.png](non-retina/regmem-search.png) - 2 KB
 
 ```yaml
 - height: 585
@@ -108,8 +108,8 @@ for shot in shots:
 
 ## advanced-export.png
 
-- Retina: [advanced-export.png](advanced-export.png) - 33 KB
-- Non-retina: [non-retina/advanced-export.png](non-retina/advanced-export.png) - 14 KB
+- Retina: [advanced-export.png](advanced-export.png) - 28 KB
+- Non-retina: [non-retina/advanced-export.png](non-retina/advanced-export.png) - 12 KB
 
 ```yaml
 - output: advanced-export.png
@@ -122,8 +122,8 @@ for shot in shots:
 
 ## faceting-details.png
 
-- Retina: [faceting-details.png](faceting-details.png) - 158 KB
-- Non-retina: [non-retina/faceting-details.png](non-retina/faceting-details.png) - 69 KB
+- Retina: [faceting-details.png](faceting-details.png) - 140 KB
+- Non-retina: [non-retina/faceting-details.png](non-retina/faceting-details.png) - 63 KB
 
 ```yaml
 - output: faceting-details.png
@@ -138,7 +138,7 @@ for shot in shots:
 
 ## binary-data.png
 
-- Retina: [binary-data.png](binary-data.png) - 14 KB
+- Retina: [binary-data.png](binary-data.png) - 13 KB
 - Non-retina: [non-retina/binary-data.png](non-retina/binary-data.png) - 4 KB
 
 ```yaml
@@ -151,5 +151,19 @@ for shot in shots:
 ```
 
 <img alt="binary-data.png" src="non-retina/binary-data.png" width="400">
+
+## timezones.png
+
+- Retina: [timezones.png](timezones.png) - 126 KB
+- Non-retina: [non-retina/timezones.png](non-retina/timezones.png) - 54 KB
+
+```yaml
+- height: 585
+  output: timezones.png
+  url: https://timezones.datasette.io/timezones/timezones
+  width: 960
+```
+
+<img alt="timezones.png" src="non-retina/timezones.png" width="400">
 
 <!-- [[[end]]] -->
