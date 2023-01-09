@@ -26,7 +26,7 @@ for shot in shots:
 ## global-power-plants.png
 
 - Retina: [global-power-plants.png](global-power-plants.png) - 665 KB
-- Non-retina: [non-retina/global-power-plants.png](non-retina/global-power-plants.png) - 204 KB
+- Non-retina: [non-retina/global-power-plants.png](non-retina/global-power-plants.png) - 203 KB
 
 ```yaml
 - height: 1600
@@ -65,7 +65,7 @@ for shot in shots:
 
 ## tutorials-clean-data-locations-map.png
 
-- Retina: [tutorials-clean-data-locations-map.png](tutorials-clean-data-locations-map.png) - 605 KB
+- Retina: [tutorials-clean-data-locations-map.png](tutorials-clean-data-locations-map.png) - 604 KB
 - Non-retina: [non-retina/tutorials-clean-data-locations-map.png](non-retina/tutorials-clean-data-locations-map.png) - 224 KB
 
 ```yaml
@@ -94,7 +94,7 @@ for shot in shots:
 
 ## regmem-search.png
 
-- Retina: [regmem-search.png](regmem-search.png) - 5 KB
+- Retina: [regmem-search.png](regmem-search.png) - 120 KB
 - Non-retina: [non-retina/regmem-search.png](non-retina/regmem-search.png) - 2 KB
 
 ```yaml
@@ -122,7 +122,7 @@ for shot in shots:
 
 ## faceting-details.png
 
-- Retina: [faceting-details.png](faceting-details.png) - 140 KB
+- Retina: [faceting-details.png](faceting-details.png) - 142 KB
 - Non-retina: [non-retina/faceting-details.png](non-retina/faceting-details.png) - 63 KB
 
 ```yaml
@@ -154,13 +154,14 @@ for shot in shots:
 
 ## timezones.png
 
-- Retina: [timezones.png](timezones.png) - 126 KB
-- Non-retina: [non-retina/timezones.png](non-retina/timezones.png) - 54 KB
+- Retina: [timezones.png](timezones.png) - 480 KB
+- Non-retina: [non-retina/timezones.png](non-retina/timezones.png) - 111 KB
 
 ```yaml
-- height: 585
+- height: 960
   output: timezones.png
   url: https://timezones.datasette.io/timezones/timezones
+  wait: 10000
   width: 960
 ```
 
