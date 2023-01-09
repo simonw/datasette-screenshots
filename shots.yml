@@ -41,6 +41,7 @@
   padding: 10
   output: binary-data.png
 - url: https://timezones.datasette.io/timezones/timezones
-  height: 585
+  height: 960
   width: 960
+  wait: 10000
   output: timezones.png
