@@ -45,3 +45,47 @@
   width: 960
   wait: 10000
   output: timezones.png
+# Screenshots for https://datasette.io/examples
+- output: scotrail-bomb.png
+  url: https://scotrail.datasette.io/scotrail/announcements?_search=bomb
+  height: 800
+- output: datasette-io.png
+  url: https://datasette.io/
+  height: 800
+- output: laion-aesthetic.png
+  url: https://laion-aesthetic.datasette.io/laion-aesthetic-6pls/images
+  height: 800
+  wait: 1000
+- output: calands-freedraw.png
+  url: https://calands.datasettes.com/calands/CPAD_2020a_SuperUnits?_sort=id&_freedraw=%7B%22type%22%3A%22MultiPolygon%22%2C%22coordinates%22%3A%5B%5B%5B%5B-122.39456%2C37.80219%5D%2C%5B-122.36847%2C37.77289%5D%2C%5B-122.36023%2C37.74683%5D%2C%5B-122.3671%2C37.70012%5D%2C%5B-122.38083%2C37.68708%5D%2C%5B-122.39456%2C37.68165%5D%2C%5B-122.49893%2C37.68925%5D%2C%5B-122.51404%2C37.69251%5D%2C%5B-122.53326%2C37.70121%5D%2C%5B-122.55798%2C37.72402%5D%2C%5B-122.55936%2C37.74466%5D%2C%5B-122.53738%2C37.78808%5D%2C%5B-122.5209%2C37.80436%5D%2C%5B-122.48383%2C37.82172%5D%2C%5B-122.43301%2C37.82389%5D%2C%5B-122.39456%2C37.80219%5D%5D%5D%5D%7D
+  height: 800
+  wait: 3000
+- output: sfmicrosociety.png
+  url: https://archive.sfmicrosociety.org/
+  height: 800
+  javascript: |-
+    new Promise(takeShot => {
+      // Take screenshot after first 10 images have loaded
+      // not all images due to page using loading=lazy
+      let loaded = 0;
+      function imageDone(ev) {
+        loaded += 1;
+        if (loaded >= 10) {
+          takeShot();
+        }
+      }
+      Array.from(document.images).forEach(img => {
+        img.onload = imageDone
+      });
+    })
+- output: graphiql.png
+  url: https://github-to-sqlite.dogsheep.net/graphql?query=%7B%0A%20%20repos(search%3A%20%22datasette%22%2C%20sort_desc%3A%20updated_at)%20%7B%0A%20%20%20%20totalCount%0A%20%20%20%20pageInfo%20%7B%0A%20%20%20%20%20%20endCursor%0A%20%20%20%20%20%20hasNextPage%0A%20%20%20%20%7D%0A%20%20%20%20nodes%20%7B%0A%20%20%20%20%20%20full_name%0A%20%20%20%20%20%20description_%0A%20%20%20%20%20%20issues_list%20%7B%0A%20%20%20%20%20%20%20%20totalCount%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20stars_list(first%3A%203%2C%20sort_desc%3A%20starred_at)%20%7B%0A%20%20%20%20%20%20%20%20totalCount%0A%20%20%20%20%20%20%20%20nodes%20%7B%0A%20%20%20%20%20%20%20%20%20%20user%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20login%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D
+  height: 800
+  javascript: |-
+    new Promise(takeShot => {
+      document.querySelector('.execute-button').click();
+      setTimeout(() => {
+        // Wait for GraphQL to complete
+        takeShot();
+      }, 1000);
+    });
