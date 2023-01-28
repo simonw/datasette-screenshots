@@ -26,7 +26,7 @@ for shot in shots:
 ## global-power-plants.png
 
 - Retina: [global-power-plants.png](global-power-plants.png) - 665 KB
-- Non-retina: [non-retina/global-power-plants.png](non-retina/global-power-plants.png) - 203 KB
+- Non-retina: [non-retina/global-power-plants.png](non-retina/global-power-plants.png) - 206 KB
 
 ```yaml
 - height: 1600
@@ -65,8 +65,8 @@ for shot in shots:
 
 ## tutorials-clean-data-locations-map.png
 
-- Retina: [tutorials-clean-data-locations-map.png](tutorials-clean-data-locations-map.png) - 604 KB
-- Non-retina: [non-retina/tutorials-clean-data-locations-map.png](non-retina/tutorials-clean-data-locations-map.png) - 224 KB
+- Retina: [tutorials-clean-data-locations-map.png](tutorials-clean-data-locations-map.png) - 609 KB
+- Non-retina: [non-retina/tutorials-clean-data-locations-map.png](non-retina/tutorials-clean-data-locations-map.png) - 225 KB
 
 ```yaml
 - height: 1200
@@ -122,7 +122,7 @@ for shot in shots:
 
 ## faceting-details.png
 
-- Retina: [faceting-details.png](faceting-details.png) - 142 KB
+- Retina: [faceting-details.png](faceting-details.png) - 140 KB
 - Non-retina: [non-retina/faceting-details.png](non-retina/faceting-details.png) - 63 KB
 
 ```yaml
@@ -155,7 +155,7 @@ for shot in shots:
 ## timezones.png
 
 - Retina: [timezones.png](timezones.png) - 480 KB
-- Non-retina: [non-retina/timezones.png](non-retina/timezones.png) - 111 KB
+- Non-retina: [non-retina/timezones.png](non-retina/timezones.png) - 113 KB
 
 ```yaml
 - height: 960
@@ -166,5 +166,93 @@ for shot in shots:
 ```
 
 <img alt="timezones.png" src="non-retina/timezones.png" width="400">
+
+## scotrail-bomb.png
+
+- Retina: [scotrail-bomb.png](scotrail-bomb.png) - 148 KB
+- Non-retina: [non-retina/scotrail-bomb.png](non-retina/scotrail-bomb.png) - 59 KB
+
+```yaml
+- height: 800
+  output: scotrail-bomb.png
+  url: https://scotrail.datasette.io/scotrail/announcements?_search=bomb
+```
+
+<img alt="scotrail-bomb.png" src="non-retina/scotrail-bomb.png" width="400">
+
+## datasette-io.png
+
+- Retina: [datasette-io.png](datasette-io.png) - 622 KB
+- Non-retina: [non-retina/datasette-io.png](non-retina/datasette-io.png) - 234 KB
+
+```yaml
+- height: 800
+  output: datasette-io.png
+  url: https://datasette.io/
+```
+
+<img alt="datasette-io.png" src="non-retina/datasette-io.png" width="400">
+
+## laion-aesthetic.png
+
+- Retina: [laion-aesthetic.png](laion-aesthetic.png) - 543 KB
+- Non-retina: [non-retina/laion-aesthetic.png](non-retina/laion-aesthetic.png) - 180 KB
+
+```yaml
+- height: 800
+  output: laion-aesthetic.png
+  url: https://laion-aesthetic.datasette.io/laion-aesthetic-6pls/images
+  wait: 1000
+```
+
+<img alt="laion-aesthetic.png" src="non-retina/laion-aesthetic.png" width="400">
+
+## calands-freedraw.png
+
+- Retina: [calands-freedraw.png](calands-freedraw.png) - 739 KB
+- Non-retina: [non-retina/calands-freedraw.png](non-retina/calands-freedraw.png) - 216 KB
+
+```yaml
+- height: 800
+  output: calands-freedraw.png
+  url: https://calands.datasettes.com/calands/CPAD_2020a_SuperUnits?_sort=id&_freedraw=%7B%22type%22%3A%22MultiPolygon%22%2C%22coordinates%22%3A%5B%5B%5B%5B-122.39456%2C37.80219%5D%2C%5B-122.36847%2C37.77289%5D%2C%5B-122.36023%2C37.74683%5D%2C%5B-122.3671%2C37.70012%5D%2C%5B-122.38083%2C37.68708%5D%2C%5B-122.39456%2C37.68165%5D%2C%5B-122.49893%2C37.68925%5D%2C%5B-122.51404%2C37.69251%5D%2C%5B-122.53326%2C37.70121%5D%2C%5B-122.55798%2C37.72402%5D%2C%5B-122.55936%2C37.74466%5D%2C%5B-122.53738%2C37.78808%5D%2C%5B-122.5209%2C37.80436%5D%2C%5B-122.48383%2C37.82172%5D%2C%5B-122.43301%2C37.82389%5D%2C%5B-122.39456%2C37.80219%5D%5D%5D%5D%7D
+  wait: 3000
+```
+
+<img alt="calands-freedraw.png" src="non-retina/calands-freedraw.png" width="400">
+
+## sfmicrosociety.png
+
+- Retina: [sfmicrosociety.png](sfmicrosociety.png) - 617 KB
+- Non-retina: [non-retina/sfmicrosociety.png](non-retina/sfmicrosociety.png) - 187 KB
+
+```yaml
+- height: 800
+  javascript: "new Promise(takeShot => {\n  // Take screenshot after first 10 images\
+    \ have loaded\n  // not all images due to page using loading=lazy\n  let loaded\
+    \ = 0;\n  function imageDone(ev) {\n    loaded += 1;\n    if (loaded >= 10) {\n\
+    \      takeShot();\n    }\n  }\n  Array.from(document.images).forEach(img => {\n\
+    \    img.onload = imageDone\n  });\n})"
+  output: sfmicrosociety.png
+  url: https://archive.sfmicrosociety.org/
+```
+
+<img alt="sfmicrosociety.png" src="non-retina/sfmicrosociety.png" width="400">
+
+## graphiql.png
+
+- Retina: [graphiql.png](graphiql.png) - 210 KB
+- Non-retina: [non-retina/graphiql.png](non-retina/graphiql.png) - 81 KB
+
+```yaml
+- height: 800
+  javascript: "new Promise(takeShot => {\n  document.querySelector('.execute-button').click();\n\
+    \  setTimeout(() => {\n    // Wait for GraphQL to complete\n    takeShot();\n\
+    \  }, 1000);\n});"
+  output: graphiql.png
+  url: https://github-to-sqlite.dogsheep.net/graphql?query=%7B%0A%20%20repos(search%3A%20%22datasette%22%2C%20sort_desc%3A%20updated_at)%20%7B%0A%20%20%20%20totalCount%0A%20%20%20%20pageInfo%20%7B%0A%20%20%20%20%20%20endCursor%0A%20%20%20%20%20%20hasNextPage%0A%20%20%20%20%7D%0A%20%20%20%20nodes%20%7B%0A%20%20%20%20%20%20full_name%0A%20%20%20%20%20%20description_%0A%20%20%20%20%20%20issues_list%20%7B%0A%20%20%20%20%20%20%20%20totalCount%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20stars_list(first%3A%203%2C%20sort_desc%3A%20starred_at)%20%7B%0A%20%20%20%20%20%20%20%20totalCount%0A%20%20%20%20%20%20%20%20nodes%20%7B%0A%20%20%20%20%20%20%20%20%20%20user%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20login%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D
+```
+
+<img alt="graphiql.png" src="non-retina/graphiql.png" width="400">
 
 <!-- [[[end]]] -->
